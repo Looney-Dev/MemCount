@@ -3,5 +3,4 @@ async
 asyncio
 aiohttp
 websockets
-time==16.3
-json==20.2
+
