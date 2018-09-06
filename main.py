@@ -6,7 +6,7 @@ import asyncio
 import time
 
 client = discord.Client()
-admin_ids = ["269959141508775937"]
+admin_ids = ["402316460325601292"]
 spam_protector = {}
 
 
