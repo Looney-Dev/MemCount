@@ -3,6 +3,5 @@ async
 asyncio
 aiohttp
 websockets
-sqlite3
 time
 json
