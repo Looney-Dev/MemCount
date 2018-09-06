@@ -89,8 +89,8 @@ footer = "~ bot by LiBa01#8817"
 
 def post_to_apis():
     domains = {
-        'discordbots.org': 'API-TOKEN',
-        'bots.discord.pw': 'API-TOKEN'
+        'discordbots.org': (process.env.DBL_TOKEN),
+        'bots.discord.pw': (process.env.DISCORD_BOTS_TOKEN)
     }
     for domain in domains:
         count_json = json.dumps({
@@ -767,4 +767,4 @@ async def uptime_count():
 
 
 client.loop.create_task(uptime_count())
-client.run("[BOT-TOKEN]")  # insert token
+client.run(process.env.TOKEN)  # insert token
